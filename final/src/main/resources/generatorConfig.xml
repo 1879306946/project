@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+	<classPathEntry location="D:\applications\apache-maven-3.6.0\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar"/>
+	<context id="context1" >
+	  <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/final?serverTimezone=GMT%2B8&amp;useUnicode=true&amp;characterEncoding=UTF-8" userId="root" password="2333" />
+	  <javaModelGenerator targetPackage="com.lucius.entity" targetProject="final" ></javaModelGenerator>
+	  <sqlMapGenerator targetPackage="com.lucius.mapper" targetProject="final" ></sqlMapGenerator>
+	  <javaClientGenerator targetPackage="com.lucius.mapper" targetProject="final" type="XMLMAPPER" />
+	  <table schema="" tableName="userinfo" ></table>
+	  <table schema="" tableName="userinfo_role" ></table>
+	  <table schema="" tableName="role" ></table>
+	  <table schema="" tableName="tree" ></table>
+	  <table schema="" tableName="role_tree" ></table>
+	</context>
+</generatorConfiguration>
